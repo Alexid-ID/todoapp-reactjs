@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+select {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: 2px solid var(--secondary-color);
+  padding: 4px;
+}
+
+#root {
+  margin: auto;
+  width: 40%;
+  height: 100vh;
+  padding-top: 5%;
+}
+
+/* root reponsive */
+@media (max-width: 992px) {
+  #root {
+    width: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  #root {
+    width: 80%;
+  }
+}
+
+@media (max-width: 576px) {
+  #root {
+    width: 90%;
+  }
+}
+

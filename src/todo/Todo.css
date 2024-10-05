@@ -1,0 +1,111 @@
+/* common css */
+input[type="text"] {
+    flex: 1;
+    padding: 6px;
+    border: 1px solid var(--secondary-color);
+    color: #000;
+}
+
+/* common css */
+
+.todo-header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.todo-header h1 {
+    font-size: 2rem;
+}
+
+.todo-input {
+    display: flex;
+    gap: 12px;
+}
+
+
+.todo-input .icon {
+    display: inline-block;
+}
+
+.todo-input button {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    border: 1px solid var(--secondary-color);
+    padding: 4px 8px;
+    transition: 0.5s;
+}
+
+.todo-input button:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+/* todo list */
+.todo-doing {
+    margin-top: 24px;
+}
+
+.todo-list h2 {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.todo-list .todo-item {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    border: 1px solid var(--secondary-color);
+    gap: 8px;
+    background-color: var(--primary-color);
+    cursor: drag;
+}
+
+.todo-list ul {
+    padding: 12px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.todo-item:hover i {
+    display: inline;
+}
+
+.todo-list .item-content {
+    flex: 1;
+}
+
+.todo-item i:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+
+/* edit group */
+
+.edit-group input {
+    background-color: transparent;
+    border: none;
+    flex: 1;
+    color: var(--secondary-color);
+}
+
+.edit-group input:focus {
+    outline: none;
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.edit-group {
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+}
+
+.edit-group .button-group {
+    display: flex;
+    gap: 8px;
+}
